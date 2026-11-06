@@ -1,5 +1,10 @@
 title: Dark Archive Case Files
 description: "Original horror stories and researched mysteries, clearly labelled. Fiction is fiction, researched is sourced."
+# Clean date URLs: Jekyll's default permalink adds categories, so a post
+# with categories [fiction, case-files] would live at
+# /fiction/case-files/2026/11/02/... and the /2026/11/02/... link in
+# index.md would 404. This keeps every post at /YYYY/MM/DD/slug.html.
+permalink: /:year/:month/:day/:title/
 theme: minima
 plugins:
   - jekyll-feed
