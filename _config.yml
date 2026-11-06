@@ -1,0 +1,5 @@
+title: Dark Archive Case Files
+description: "Original horror stories and researched mysteries, clearly labelled. Fiction is fiction, researched is sourced."
+theme: minima
+plugins:
+  - jekyll-feed
