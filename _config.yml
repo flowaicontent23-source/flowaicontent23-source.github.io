@@ -4,7 +4,10 @@ description: "Original horror stories and researched mysteries, clearly labelled
 # with categories [fiction, case-files] would live at
 # /fiction/case-files/2026/11/02/... and the /2026/11/02/... link in
 # index.md would 404. This keeps every post at /YYYY/MM/DD/slug.html.
-permalink: /:year/:month/:day/:title/
+# NOTE: must end with .html (not a trailing slash) — a trailing slash
+# makes Jekyll build .../slug/index.html instead, and the .html link
+# in index.md would still 404.
+permalink: /:year/:month/:day/:title.html
 theme: minima
 plugins:
   - jekyll-feed
